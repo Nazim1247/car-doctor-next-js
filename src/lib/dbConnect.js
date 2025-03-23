@@ -1,7 +1,9 @@
 import { MongoClient, ServerApiVersion } from 'mongodb';
 
+export const collectionNameObj = {
+    servicesCollection: 'test-services'
+}
 
-// EJ5rVdJkCvcaAjCk
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PUSS}@cluster0.9njqe.mongodb.net/?appName=Cluster0`;
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 
