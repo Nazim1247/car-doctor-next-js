@@ -37,7 +37,8 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$externals$5d2f$mongodb__$5b$external$5d$__$28$mongodb$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/mongodb [external] (mongodb, cjs)");
 ;
 const collectionNameObj = {
-    servicesCollection: 'test-services'
+    servicesCollection: 'test-services',
+    userCollection: 'test-user'
 };
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PUSS}@cluster0.9njqe.mongodb.net/?appName=Cluster0`;
 function dbConnect(collectionName) {

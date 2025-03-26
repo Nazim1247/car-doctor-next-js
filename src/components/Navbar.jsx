@@ -11,6 +11,7 @@ const Navbar = () => {
         <li><Link href={'/services'}>Services</Link></li>
         <li><Link href={'/blogs'}>Blogs</Link></li>
         <li><Link href={'/contacts'}>Contacts</Link></li>
+        
     
         </>
         
@@ -41,7 +42,8 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn btn-outline">Appointment</a>
+  <Link href={'/register'} className='btn btn-sm btn-ghost text-lg'>Register</Link>
+    <a className="btn btn-outline ml-2">Appointment</a>
   </div>
 </div>
         </div>

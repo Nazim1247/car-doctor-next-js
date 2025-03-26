@@ -7,7 +7,7 @@ const page = async ({params}) => {
     const p = await params;
     const servicesCollection = dbConnect(collectionNameObj.servicesCollection);
     const data = await servicesCollection.findOne({_id: new ObjectId(p.id)});
-console.log(data)
+
     return (
         <div className='max-w-[1250px] mx-auto mt-6'>
             <section className='relative'>
