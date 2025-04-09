@@ -1,6 +1,7 @@
 "use client"
 
 import { registerUser } from "@/app/actions/auth/registerUser";
+import Link from "next/link";
 
 const RegisterForm = () => {
     const handleSubmit = async (e)=>{
@@ -26,6 +27,7 @@ const RegisterForm = () => {
           <div><a className="link link-hover">Forgot password?</a></div>
           <button className="btn btn-neutral mt-4">Register</button>
         </form>
+        <Link href={'/login'}>Already have an account? Please <samp className="text-red-600">Login</samp></Link>
       </div>
     </div>
         </div>

@@ -32,7 +32,7 @@ const Navbar = () => {
       </ul>
     </div>
     <Link href={'/'} className="text-xl">
-        <Image src={'/assets/logo.svg'} width={107} height={87}/>
+        <Image src={'/assets/logo.svg'} width={107} height={87} alt='logo image'/>
     </Link>
   </div>
   <div className="navbar-center hidden lg:flex">

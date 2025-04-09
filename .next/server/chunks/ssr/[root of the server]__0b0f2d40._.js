@@ -64,9 +64,7 @@ const /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ registerUser = async (payload)=>
     const userCollection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dbConnect$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$dbConnect$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["collectionNameObj"].userCollection);
     // validation
     const { email, password } = payload;
-    if (!email || !password) return {
-        success: false
-    };
+    if (!email || !password) return null;
     const user = await userCollection.findOne({
         email: payload.email
     });
@@ -74,15 +72,10 @@ const /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ registerUser = async (payload)=>
         const hashedPassword = await __TURBOPACK__imported__module__$5b$externals$5d2f$bcrypt__$5b$external$5d$__$28$bcrypt$2c$__cjs$29$__["default"].hash(password, 10);
         payload.password = hashedPassword;
         const result = await userCollection.insertOne(payload);
-        const { acknowledged, insertedId } = result;
-        return {
-            acknowledged,
-            insertedId
-        };
+        result.insertedId = result.insertedId.toString();
+        return result;
     }
-    return {
-        success: false
-    };
+    return null;
 };
 ;
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
