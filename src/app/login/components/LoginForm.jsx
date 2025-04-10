@@ -3,6 +3,7 @@ import Link from "next/link";
 import { signIn } from "next-auth/react"
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
+import SocialLogin from "./SocialLogin";
 
 const LoginForm = () => {
     const router = useRouter();
@@ -27,14 +28,16 @@ const LoginForm = () => {
         
     }
     return (
-        <div>
-            <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+        <div className="w-full md:w-2/3 mx-auto">
+            <div className="card bg-base-100 w-ful shadow-2xl">
       <div className="card-body">
+      <SocialLogin />
+      <div className="divider">OR</div>
         <form onSubmit={handleSubmit} className="fieldset">
           <label className="fieldset-label">Email</label>
-          <input name='email' type="email" className="input" placeholder="Email" />
+          <input name='email' type="email" className="input w-full" placeholder="Email" />
           <label className="fieldset-label">Password</label>
-          <input name='password' type="password" className="input" placeholder="Password" />
+          <input name='password' type="password" className="input w-full" placeholder="Password" />
           <div><a className="link link-hover">Forgot password?</a></div>
           <button className="btn btn-neutral mt-4">Login</button>
         </form>

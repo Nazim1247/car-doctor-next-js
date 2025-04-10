@@ -1,6 +1,7 @@
 "use client"
 
 import { registerUser } from "@/app/actions/auth/registerUser";
+import SocialLogin from "@/app/login/components/SocialLogin";
 import Link from "next/link";
 
 const RegisterForm = () => {
@@ -14,17 +15,19 @@ const RegisterForm = () => {
         await registerUser({name,email,password});
     }
     return (
-        <div>
-            <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+        <div className="w-full md:w-2/3 mx-auto">
+            <div className="card bg-base-100 w-full shadow-2xl">
       <div className="card-body">
+        <SocialLogin />
+        <div className="divider">OR</div>
         <form onSubmit={handleSubmit} className="fieldset">
           <label className="fieldset-label">Name</label>
-          <input name='name' type="text" className="input" placeholder="Name" />
+          <input name='name' type="text" className="input w-full" placeholder="Name" />
           <label className="fieldset-label">Email</label>
-          <input name='email' type="email" className="input" placeholder="Email" />
+          <input name='email' type="email" className="input w-full" placeholder="Email" />
           <label className="fieldset-label">Password</label>
-          <input name='password' type="password" className="input" placeholder="Password" />
-          <div><a className="link link-hover">Forgot password?</a></div>
+          <input name='password' type="password" className="input w-full" placeholder="Password" />
+          
           <button className="btn btn-neutral mt-4">Register</button>
         </form>
         <Link href={'/login'}>Already have an account? Please <samp className="text-red-600">Login</samp></Link>

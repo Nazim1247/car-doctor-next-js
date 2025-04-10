@@ -1,7 +1,7 @@
 const CHUNK_PUBLIC_PATH = "server/app/api/auth/[...nextauth]/route.js";
 const runtime = require("../../../../chunks/[turbopack]_runtime.js");
 runtime.loadChunk("server/chunks/node_modules_next_fb47b369._.js");
-runtime.loadChunk("server/chunks/node_modules_next-auth_35ecac8a._.js");
+runtime.loadChunk("server/chunks/node_modules_next-auth_7f793d0d._.js");
 runtime.loadChunk("server/chunks/node_modules_openid-client_ef38b3be._.js");
 runtime.loadChunk("server/chunks/node_modules_jose_dist_node_cjs_b4a80197._.js");
 runtime.loadChunk("server/chunks/node_modules_ce7b02e9._.js");

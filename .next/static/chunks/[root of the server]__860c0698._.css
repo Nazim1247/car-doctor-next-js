@@ -141,6 +141,8 @@
     --color-white: #fff;
     --spacing: .25rem;
     --container-sm: 24rem;
+    --container-md: 28rem;
+    --container-lg: 32rem;
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -2723,6 +2725,34 @@
     }
   }
 
+  .divider {
+    display: flex;
+    height: 1rem;
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch;
+    white-space: nowrap;
+    margin: var(--divider-m, 1rem 0);
+  }
+
+  .divider:before, .divider:after {
+    content: "";
+    height: .125rem;
+    width: 100%;
+    flex-grow: 1;
+    background-color: color-mix(in oklab, var(--color-base-content) 10%, transparent);
+  }
+
+  @media print {
+    .divider:before, .divider:after {
+      border: .5px solid;
+    }
+  }
+
+  .divider:not(:empty) {
+    gap: 1rem;
+  }
+
   .filter {
     display: flex;
     flex-wrap: wrap;
@@ -3207,6 +3237,14 @@
     max-width: 1250px;
   }
 
+  .max-w-lg {
+    max-width: var(--container-lg);
+  }
+
+  .max-w-md {
+    max-width: var(--container-md);
+  }
+
   .max-w-sm {
     max-width: var(--container-sm);
   }
@@ -3332,6 +3370,10 @@
 
   .rounded-box {
     border-radius: var(--radius-box);
+  }
+
+  .rounded-full {
+    border-radius: 3.40282e38px;
   }
 
   .rounded-l-2xl {
@@ -3557,6 +3599,12 @@
   @media (width >= 48rem) {
     .md\:col-span-6 {
       grid-column: span 6 / span 6;
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:w-2\/3 {
+      width: 66.6667%;
     }
   }
 

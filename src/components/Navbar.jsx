@@ -2,8 +2,11 @@
 import { signOut, useSession } from 'next-auth/react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import toast from 'react-hot-toast';
 
 const Navbar = () => {
+  const router = useRouter();
 const {data: session,status} = useSession();
 // console.log(session)
     const navMenu = ()=>{
@@ -13,10 +16,13 @@ const {data: session,status} = useSession();
         <li><Link href={'/services'}>Services</Link></li>
         <li><Link href={'/blogs'}>Blogs</Link></li>
         <li><Link href={'/contacts'}>Contacts</Link></li>
-        
-    
-        </>
-        
+        </>  
+    }
+
+    const handleLogout = ()=>{
+      signOut({redirect:false});
+      router.push('/login');
+      toast.success('Logout Successfully!');
     }
     return (
         <div className='bg-base-100 shadow-sm'>
@@ -45,7 +51,10 @@ const {data: session,status} = useSession();
   </div>
   <div className="navbar-end">
     {status === 'authenticated'? 
-    <button onClick={()=>signOut()} className='btn btn-sm btn-ghost text-lg'>Logout</button>
+    <>
+    <button onClick={handleLogout} className='btn btn-sm btn-ghost text-lg'>Logout</button>
+    <Image src={session?.user?.image} width={40} height={40} alt='profile image' className='rounded-full'/>
+    </>
     :
     <Link href={'/login'} className='btn btn-sm btn-ghost text-lg'>Login</Link>
     }
