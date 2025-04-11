@@ -2,7 +2,8 @@ import { MongoClient, ServerApiVersion } from 'mongodb';
 
 export const collectionNameObj = {
     servicesCollection: 'test-services',
-    userCollection: 'test-user'
+    userCollection: 'test-user',
+    bookingCollection: 'test-booking',
 }
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PUSS}@cluster0.9njqe.mongodb.net/?appName=Cluster0`;

@@ -66,7 +66,8 @@ var __TURBOPACK__imported__module__$5b$externals$5d2f$mongodb__$5b$external$5d$_
 ;
 const collectionNameObj = {
     servicesCollection: 'test-services',
-    userCollection: 'test-user'
+    userCollection: 'test-user',
+    bookingCollection: 'test-booking'
 };
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PUSS}@cluster0.9njqe.mongodb.net/?appName=Cluster0`;
 function dbConnect(collectionName) {
