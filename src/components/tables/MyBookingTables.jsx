@@ -1,6 +1,7 @@
 
 import DeleteBookingButton from "@/app/my-bookings/components/DeleteBookingButton";
 import Image from "next/image";
+import Link from "next/link";
 import { FaEdit } from "react-icons/fa";
 
 
@@ -18,6 +19,8 @@ const MyBookingTables = ({data}) => {
         <th>Service Name</th>
         <th>Service Date</th>
         <th>Service Price</th>
+        <th>Phone</th>
+        <th>Address</th>
         <th>Update</th>
         <th>Delete</th>
       </tr>
@@ -43,7 +46,13 @@ const MyBookingTables = ({data}) => {
         </td>
         <td>{item.date}</td>
         <td>{item.service_price}</td>
-        <td><FaEdit className='text-xl text-orange-500'/></td>
+        <td>{item.phone}</td>
+        <td>{item.address}</td>
+        <td>
+            <Link href={`/my-bookings/${item._id}`}>
+            <FaEdit className='text-xl text-orange-500'/>
+            </Link>
+        </td>
         <td>
             <DeleteBookingButton id={item._id}/>
         </td>

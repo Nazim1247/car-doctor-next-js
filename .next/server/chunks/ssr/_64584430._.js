@@ -66,7 +66,9 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$my$2d$bookings$2f$components$2f$DeleteBookingButton$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/my-bookings/components/DeleteBookingButton.jsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/fa/index.mjs [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -86,53 +88,67 @@ const MyBookingTables = ({ data })=>{
                                     children: "Service Image"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                    lineNumber: 17,
+                                    lineNumber: 18,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                     children: "Service Name"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                    lineNumber: 18,
+                                    lineNumber: 19,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                     children: "Service Date"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                    lineNumber: 19,
+                                    lineNumber: 20,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                     children: "Service Price"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                    lineNumber: 20,
+                                    lineNumber: 21,
+                                    columnNumber: 9
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                    children: "Phone"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/tables/MyBookingTables.jsx",
+                                    lineNumber: 22,
+                                    columnNumber: 9
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                    children: "Address"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/tables/MyBookingTables.jsx",
+                                    lineNumber: 23,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                     children: "Update"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                    lineNumber: 21,
+                                    lineNumber: 24,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                     children: "Delete"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                    lineNumber: 22,
+                                    lineNumber: 25,
                                     columnNumber: 9
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                            lineNumber: 15,
+                            lineNumber: 16,
                             columnNumber: 7
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                        lineNumber: 14,
+                        lineNumber: 15,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -153,61 +169,82 @@ const MyBookingTables = ({ data })=>{
                                                         alt: item.service_name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                                        lineNumber: 35,
+                                                        lineNumber: 38,
                                                         columnNumber: 17
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                                    lineNumber: 34,
+                                                    lineNumber: 37,
                                                     columnNumber: 15
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                                lineNumber: 33,
+                                                lineNumber: 36,
                                                 columnNumber: 13
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                            lineNumber: 32,
+                                            lineNumber: 35,
                                             columnNumber: 11
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                        lineNumber: 31,
+                                        lineNumber: 34,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                         children: item.service_name
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                        lineNumber: 41,
+                                        lineNumber: 44,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                         children: item.date
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                        lineNumber: 44,
+                                        lineNumber: 47,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                         children: item.service_price
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                        lineNumber: 45,
+                                        lineNumber: 48,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FaEdit"], {
-                                            className: "text-xl text-orange-500"
+                                        children: item.phone
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/tables/MyBookingTables.jsx",
+                                        lineNumber: 49,
+                                        columnNumber: 9
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: item.address
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/tables/MyBookingTables.jsx",
+                                        lineNumber: 50,
+                                        columnNumber: 9
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            href: `/my-bookings/${item._id}`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FaEdit"], {
+                                                className: "text-xl text-orange-500"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/tables/MyBookingTables.jsx",
+                                                lineNumber: 53,
+                                                columnNumber: 13
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                            lineNumber: 46,
+                                            lineNumber: 52,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                        lineNumber: 46,
+                                        lineNumber: 51,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -215,40 +252,40 @@ const MyBookingTables = ({ data })=>{
                                             id: item._id
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                            lineNumber: 48,
+                                            lineNumber: 57,
                                             columnNumber: 13
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                        lineNumber: 47,
+                                        lineNumber: 56,
                                         columnNumber: 9
                                     }, this)
                                 ]
                             }, item._id, true, {
                                 fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                                lineNumber: 29,
+                                lineNumber: 32,
                                 columnNumber: 13
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                        lineNumber: 25,
+                        lineNumber: 28,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 3
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-            lineNumber: 11,
+            lineNumber: 12,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/tables/MyBookingTables.jsx",
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 9
     }, this);
 };
