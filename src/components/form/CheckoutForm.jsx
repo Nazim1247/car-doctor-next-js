@@ -17,7 +17,7 @@ const CheckoutForm = ({data}) => {
         const bookingPayload = {name,email,phone,date,amount,address,service_id: data._id,service_name: data.title,service_img: data.img,service_price: data.price}
         // console.log(bookingPayload);
 
-        const res = await fetch('http://localhost:3000/api/service',{
+        const res = await fetch('https://next-js-car-doctor-nine.vercel.app/api/service',{
             method: 'POST',
             body: JSON.stringify(bookingPayload),
         })

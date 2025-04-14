@@ -18,7 +18,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$ico
 const DeleteBookingButton = ({ id })=>{
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const handleDelete = async (id)=>{
-        const res = await fetch(`http://localhost:3000/api/service/${id}`, {
+        const res = await fetch(`https://next-js-car-doctor-nine.vercel.app/api/service/${id}`, {
             method: 'DELETE'
         });
         const data = await res.json();

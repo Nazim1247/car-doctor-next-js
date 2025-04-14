@@ -1457,7 +1457,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = parseUrl;
 function parseUrl(url) {
     var _url2;
-    const defaultUrl = new URL("http://localhost:3000/api/auth");
+    const defaultUrl = new URL("https://next-js-car-doctor-nine.vercel.app/api/auth");
     if (url && !url.startsWith("http")) {
         url = `https://${url}`;
     }

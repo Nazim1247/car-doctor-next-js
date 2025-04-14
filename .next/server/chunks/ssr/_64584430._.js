@@ -308,7 +308,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$head
 ;
 ;
 const fetchMyBookings = async ()=>{
-    const res = await fetch('http://localhost:3000/api/service', {
+    const res = await fetch('https://next-js-car-doctor-nine.vercel.app/api/service', {
         headers: await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$headers$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["headers"])()
     });
     const d = await res.json();
@@ -320,7 +320,7 @@ const page = async ()=>{
     // const [data,setData] = useState([]);
     // useEffect(()=>{
     //     const fetchMyBookings = async()=>{
-    //         const res = await fetch('http://localhost:3000/api/service');
+    //         const res = await fetch('https://next-js-car-doctor-nine.vercel.app/api/service');
     //         const d = await res.json();
     //         setData(d);
     //     }

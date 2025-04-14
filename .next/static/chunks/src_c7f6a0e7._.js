@@ -228,7 +228,7 @@ const page = ()=>{
         "page.useEffect": ()=>{
             const fetchMyBookings = {
                 "page.useEffect.fetchMyBookings": async ()=>{
-                    const res = await fetch('http://localhost:3000/api/service');
+                    const res = await fetch('https://next-js-car-doctor-nine.vercel.app/api/service');
                     const d = await res.json();
                     setData(d);
                 }

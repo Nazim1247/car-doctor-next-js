@@ -18,7 +18,7 @@ const BookingUpdateForm = ({data}) => {
         const updatePayload = {phone,date,address,}
         // console.log(bookingPayload);
 
-        const res = await fetch(`http://localhost:3000/api/my-bookings/${data._id}`,{
+        const res = await fetch(`https://next-js-car-doctor-nine.vercel.app/api/my-bookings/${data._id}`,{
             method: 'PATCH',
             body: JSON.stringify(updatePayload),
         })
