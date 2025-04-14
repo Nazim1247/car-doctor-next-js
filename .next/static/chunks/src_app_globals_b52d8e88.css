@@ -3199,6 +3199,10 @@
     flex-shrink: 1;
   }
 
+  .shrink {
+    flex-shrink: 1;
+  }
+
   .shrink-0 {
     flex-shrink: 0;
   }

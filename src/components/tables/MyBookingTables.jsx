@@ -1,7 +1,8 @@
 
+import DeleteBookingButton from "@/app/my-bookings/components/DeleteBookingButton";
 import Image from "next/image";
 import { FaEdit } from "react-icons/fa";
-import { MdDeleteForever } from "react-icons/md";
+
 
 const MyBookingTables = ({data}) => {
 // console.log(data)
@@ -43,7 +44,9 @@ const MyBookingTables = ({data}) => {
         <td>{item.date}</td>
         <td>{item.service_price}</td>
         <td><FaEdit className='text-xl text-orange-500'/></td>
-        <td><MdDeleteForever className='text-2xl text-red-500'/></td>
+        <td>
+            <DeleteBookingButton id={item._id}/>
+        </td>
         
       </tr>
         )

@@ -10,7 +10,7 @@ export const GET = async(req)=>{
     const session = await getServerSession(authOptions);
     // console.log("session:", session);
     if(session){
-        console.log(session);
+        // console.log(session);
         const email = session?.user?.email;
         const bookingCollection = dbConnect(collectionNameObj.bookingCollection);
         const result = await bookingCollection.find({email}).toArray();
