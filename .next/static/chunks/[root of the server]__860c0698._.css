@@ -143,6 +143,8 @@
     --container-sm: 24rem;
     --container-md: 28rem;
     --container-lg: 32rem;
+    --text-sm: .875rem;
+    --text-sm--line-height: calc(1.25 / .875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -2148,6 +2150,24 @@
     box-shadow: 0 1px 3px oklch(0% 0 0 / .1), 0 1px 2px -1px oklch(0% 0 0 / .1);
   }
 
+  .avatar {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+  }
+
+  .avatar > div {
+    display: block;
+    aspect-ratio: 1;
+    overflow: hidden;
+  }
+
+  .avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .checkbox {
     border: var(--border) solid var(--input-color, color-mix(in oklab, var(--color-base-content) 20%, #0000));
     position: relative;
@@ -3215,6 +3235,10 @@
     height: calc(var(--spacing) * 5);
   }
 
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+
   .h-full {
     height: 100%;
   }
@@ -3225,6 +3249,10 @@
 
   .w-5 {
     width: calc(var(--spacing) * 5);
+  }
+
+  .w-12 {
+    width: calc(var(--spacing) * 12);
   }
 
   .w-52 {
@@ -3350,6 +3378,10 @@
     justify-content: center;
   }
 
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -3358,6 +3390,10 @@
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
     margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+  }
+
+  .overflow-x-auto {
+    overflow-x: auto;
   }
 
   .menu-sm :where(li:not(.menu-title) > :not(ul, details, .menu-title)), .menu-sm :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
@@ -3410,6 +3446,13 @@
     border-width: 1px;
   }
 
+  .badge-ghost {
+    border-color: var(--color-base-200);
+    background-color: var(--color-base-200);
+    color: var(--color-base-content);
+    background-image: none;
+  }
+
   .border-red-500 {
     border-color: var(--color-red-500);
   }
@@ -3444,6 +3487,12 @@
     color: color-mix(in oklab, var(--color-base-content) 40%, transparent);
     font-size: .875rem;
     font-weight: 600;
+  }
+
+  .badge-sm {
+    --size: calc(var(--size-selector, .25rem) * 5);
+    font-size: .75rem;
+    padding-inline: calc(.25rem * 2.5 - var(--border));
   }
 
   .px-1 {
@@ -3493,6 +3542,11 @@
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
 
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -3514,6 +3568,10 @@
 
   .text-orange-500 {
     color: var(--color-orange-500);
+  }
+
+  .text-red-500 {
+    color: var(--color-red-500);
   }
 
   .text-red-600 {
@@ -3557,6 +3615,10 @@
   .antialiased {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  .opacity-50 {
+    opacity: .5;
   }
 
   .shadow {
@@ -3635,9 +3697,19 @@
     --size: calc(var(--size-field, .25rem) * 8);
   }
 
+  .btn-xs {
+    --fontsize: .6875rem;
+    --btn-p: .5rem;
+    --size: calc(var(--size-field, .25rem) * 6);
+  }
+
   .btn-neutral {
     --btn-color: var(--color-neutral);
     --btn-fg: var(--color-neutral-content);
+  }
+
+  .mask-squircle {
+    mask-image: url("data:image/svg+xml,%3csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M100 0C20 0 0 20 0 100s20 100 100 100 100-20 100-100S180 0 100 0Z'/%3e%3c/svg%3e");
   }
 
   @media (width >= 48rem) {

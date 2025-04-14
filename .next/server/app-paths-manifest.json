@@ -2,6 +2,5 @@
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/api/service/route": "app/api/service/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/login/page": "app/login/page.js",
-  "/page": "app/page.js"
+  "/my-bookings/page": "app/my-bookings/page.js"
 }

@@ -329,9 +329,9 @@ const GET = async (req)=>{
         req,
         secret: process.env.NEXTAUTH_SECRET
     });
-    console.log(token);
+    //   console.log(token);
     const session = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getServerSession"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$authOptions$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["authOptions"]);
-    console.log("session:", session);
+    // console.log("session:", session);
     if (session) {
         console.log(session);
         const email = session?.user?.email;
