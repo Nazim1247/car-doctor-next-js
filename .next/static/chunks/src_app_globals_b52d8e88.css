@@ -3143,6 +3143,11 @@
     display: table;
   }
 
+  .size-1 {
+    width: calc(var(--spacing) * 1);
+    height: calc(var(--spacing) * 1);
+  }
+
   .h-5 {
     height: calc(var(--spacing) * 5);
   }

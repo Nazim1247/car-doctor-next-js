@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "sorted_middleware": [],
   "middleware": {
     "/": {
       "files": [
@@ -11,15 +11,15 @@
       "page": "/",
       "matchers": [
         {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/my-bookings(\\\\.json)?[\\/#\\?]?$",
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/my-bookings{(\\\\.json)}?",
           "originalSource": "/my-bookings"
         },
         {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/my-bookings(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\\\.json)?[\\/#\\?]?$",
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/my-bookings/:path*{(\\\\.json)}?",
           "originalSource": "/my-bookings/:path*"
         },
         {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/checkout(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\\\.json)?[\\/#\\?]?$",
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/checkout/:path*{(\\\\.json)}?",
           "originalSource": "/checkout/:path*"
         }
       ],
@@ -34,8 +34,6 @@
       }
     }
   },
-  "sortedMiddleware": [
-    "/"
-  ],
+  "instrumentation": null,
   "functions": {}
 }
